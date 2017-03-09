@@ -1,0 +1,328 @@
+/***
+ * Responsive layout for the control panel
+ */
+@media screen and (max-width:40.625em) {
+    #tarteaucitron .tarteaucitronLine .tarteaucitronName {
+        width: 90% !important;
+    }
+
+    #tarteaucitronAlertBig #tarteaucitronDisclaimerAlert {
+    font: 0.75rem verdana !important;
+    color: #fff;
+    }
+
+    #tarteaucitronAlertBig #tarteaucitronPersonalize {
+    font-size: 0.7rem !important;
+    }
+
+
+    #tarteaucitron .tarteaucitronLine .tarteaucitronAsk {
+        float: left !important;
+        margin: 0.625rem 0.9375rem 0.3125rem;
+    }
+}
+
+@media screen and (max-width:61.8125em) {
+    #tarteaucitron {
+        top: 0;
+    }
+    
+    #tarteaucitron #tarteaucitronDisclaimer {
+        font-size: 0.875rem;
+    }
+}
+
+/***
+ * Common value
+ */
+#tarteaucitron * {
+    zoom: 1;
+}
+
+#tarteaucitron .clear {
+    clear: both;
+}
+
+#tarteaucitron a {
+    color: rgb(66, 66, 66);
+    font-size: 0.75rem;
+    font-style: italic;
+    text-decoration: none;
+}
+
+#tarteaucitronAlertBig a, #tarteaucitronAlertSmall a {
+    color: #fff;
+}
+
+#tarteaucitron b {
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+/***
+ * Root div added just before </body>
+ */
+#tarteaucitronRoot {
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+
+#tarteaucitronRoot * {
+    box-sizing: initial;
+    color: #57585a;
+    font-family: verdana;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    vertical-align: initial;
+}
+
+/***
+ * Control panel
+ */
+#tarteaucitronBack {
+    background: rgba(255, 255, 255, 0.7);
+    display: none;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2147483646;
+}
+
+#tarteaucitron {
+    background: #57585a;
+    border: 0;
+    border-bottom: 3rem solid;
+    display: none;
+    left: 0;
+    margin: 0 auto;
+    max-width: 61.825rem;
+    position: relative;
+    right: 0;
+    top: 0;
+    z-index: 2147483647;
+}
+
+#tarteaucitron #tarteaucitronClosePanel {
+    color: #FFF;
+    cursor: pointer;
+    display: block;
+    text-decoration: underline;
+    font-family: verdana;
+    margin: 0 0.9375rem 0.9375rem 0;
+    padding-top: 0.625rem;
+    text-align: right;
+}
+
+#tarteaucitron #tarteaucitronDisclaimer {
+    color: #fff;
+    font-size: 1rem;
+    margin: 0 auto 0.625rem;
+    max-width: 50rem;
+    padding: 0 0.9375rem;
+    text-align: center;
+}
+
+#tarteaucitron .tarteaucitronTitle {
+    background: #4a4a4a;
+    border-top: 1.5625rem solid #57585a;
+    color: #FFF;
+    font-size: 1.25rem;
+    padding: 1.125rem 1.375rem;
+}
+
+#tarteaucitron .tarteaucitronTitle .tarteaucitronDetails {
+    color: #fff;
+    font-size: 0.8125rem;
+}
+
+#tarteaucitron .tarteaucitronLine {
+    background: #f5f5f5;
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+    height: auto;
+    min-height: 100%;
+    overflow: hidden;
+    padding: 0.3125rem;
+}
+
+#tarteaucitron .tarteaucitronLine .tarteaucitronName {
+    display: inline-block;
+    float: left;
+    margin-left: 0.9375rem;
+    text-align: left;
+    width: 50%;
+}
+
+#tarteaucitron .tarteaucitronLine .tarteaucitronAsk {
+    display: inline-block;
+    float: right;
+    margin: 0.4375rem 0.9375rem 0;
+    text-align: right;
+}
+
+#tarteaucitron .tarteaucitronLine .tarteaucitronAsk .tarteaucitronAllow,
+#tarteaucitron .tarteaucitronLine .tarteaucitronAsk .tarteaucitronDeny,
+.tac_activate .tarteaucitronAllow {
+    background: gray;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0.3125rem 0.625rem;
+    text-align: center;
+    text-decoration: none;
+    width: auto;
+}
+
+/***
+ * Big alert
+ */
+#tarteaucitronAlertBig {
+    background: #57585a;
+    color: #fff !important;
+    display: none;
+    font-size: 0.875rem !important;
+    left: 0;
+    padding: 0.3125rem 5%;
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    width: 90%;
+    box-sizing: content-box;
+    z-index: 2147483645;
+}
+
+#tarteaucitronAlertBig #tarteaucitronDisclaimerAlert {
+    font: 0.8rem verdana;
+    color: #fff;
+}
+
+#tarteaucitronAlertBig #tarteaucitronPersonalize {
+    background: #008300;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.8rem;
+    padding: 0.3125rem 0.625rem;
+    text-decoration: none;
+    margin-left: 0.4375rem;
+}
+
+#tarteaucitronAlertBig #tarteaucitronCloseAlert {
+    font-size: 0.8rem;
+    margin-left: 0.4375rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+/***
+ * Small alert
+ */
+#tarteaucitronAlertSmall {
+    background: #57585a;
+    bottom: 0;
+    color: #fff !important;
+    cursor: pointer;
+    display: none;
+    font-size: 0.6875rem !important;
+    padding: 0.1875rem;
+    padding-right: 0.3125rem;
+    position: fixed;
+    right: 0;
+    z-index: 2147483645;
+}
+
+#tarteaucitronAlertSmall #tarteaucitronDot {
+    background-color: #E63737;
+    border-radius: 0.625rem;
+    display: inline-block;
+    height: 0.625rem;
+    margin: 0px 0.3125rem 2px 0.3125rem;
+    vertical-align: middle;
+    width: 0.625rem;
+}
+
+/***
+ * Fallback activate link
+ */
+
+.tac_activate {
+    background: #57585a;
+    display: block;
+    height: 100%;
+    min-height: 100px;
+    position: relative;
+    width: 100%;
+}
+
+.tac_activate .tac_float {
+    background: #57585a;
+    bottom: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: verdana;
+    font-size: 0.875rem;
+    height: 5rem;
+    left: 0;
+    line-height: initial;
+    margin: auto;
+    padding: 0.625rem 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+}
+
+.tac_activate .tac_float b {
+    color: #fff !important;
+}
+
+.tac_activate .tac_float .tarteaucitronAllow {
+    background-color: #1B870B;
+    margin-top: 0.625rem;
+}
+
+/***
+ * Fallback links for social networks
+ */
+.tac_share {
+    display: inline-block;
+    margin: 0;
+    padding: 0.1875rem 0.625rem;
+    text-decoration: none;
+    font-size: 0.8125rem;
+    color: #fff !important;
+    text-align: center;
+}
+
+.tac_share_twitter {
+    background-color: #4099ff;
+}
+
+.tac_share_facebook {
+    background-color: #3b5998;
+}
+
+.tac_share_googlep {
+    background-color: #D34836;
+}
+
+.tac_share_linkedin {
+    background-color: #3399cc;
+}
+
+.tac_share_pinterest {
+    background-color: #cb2027;
+}
+
+.tac_share_digg {
+    background-color: #0093CC;
+}
+
+.tac_share_reddit {
+    background-color: #2E81D5;
+}
